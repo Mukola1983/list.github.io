@@ -1,0 +1,20 @@
+<mat-card class="card">
+  <button mat-button color="accent" (click)="openDialog()">Add User</button>
+  <div class="lists-container">
+    <div>
+      <div *ngFor="let it of list; index as i" class="list">
+        <p>{{ it.name }}</p>
+        <p>{{ it.surname }}</p>
+        <p>{{ it.color }}</p>
+        <button mat-button color="warn" (click)="deleteItem(i)">X</button>
+      </div>
+    </div>
+
+    <div>
+      <div *ngFor="let color of colors" class="list">
+        <h5>{{ color }} :</h5>
+        <p>{{ count(color) }}</p>
+      </div>
+    </div>
+  </div>
+</mat-card>

@@ -1,0 +1,18 @@
+.card {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(223, 230, 230);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+.list p {
+  margin-right: 10px;
+}
+
+.lists-container {
+  display: flex;
+  justify-content: space-around;
+}
